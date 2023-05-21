@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашняя работа по формам</title>
+</head>
+
+<body>
+    <h1>Форма №1</h1>
+    <form action="" method="get">
+        <h2>Оставьте ваши контакты</h1>
+            <p>
+                <b>Имя</b> <br> <input type="text" name="login">
+            </p>
+            <p>
+                <b>Телефон</b> <br> <input type="tel" name="phone">
+            </p>
+            <p>
+                <b>Почта</b> <br> <input type="email" name="mail">
+            </p>
+            <button type="submit">Запросить цену</button>
+            <p>
+                Нажимая на кнопку, вы даете <br> согласие на обработку своих <br> персональных данных в соответствии
+                <br> с
+                политикой
+                конфиденциальности
+            </p>
+    </form>
+    <br><br><br>
+    <h1>Форма №2</h1>
+    <form action="" method="get">
+        <p>
+            Введите ФИО: <br> <input type="text" name="FIO">
+        </p>
+        <p>
+            Введите пароль: <br> <input type="password" name="pass">
+        </p>
+        <p>
+            <b>Какой диск вы хотите получить?</b>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="disk"> CD
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="radio" name="disk"> DVD
+            </label>
+        </p>
+        <p>
+            <b>Какие обучающие курсы вы хотите видеть на диске?</b>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="ps"> Курсы по фотошопу
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="dream"> Курсы по Adobe Dreamweaver
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" name="php"> Курсы по PHP
+            </label>
+        </p>
+        <p>
+            <b>Выберите способ доставки</b>
+        </p>
+        <select name="delivery">
+            <option disabled selected>Выбор</option>
+            <option value="yep">Курьером</option>
+            <option value="no">Не курьером</option>
+        </select>
+        <p>
+            Введите адрес для доставки: <br> <textarea name="adres" id="" cols="50" rows="6"></textarea>
+        </p>
+        <button type="submit">Сделать заказ</button>
+        <button type="reset">Отмена</button>
+    </form>
+    <br><br><br>
+    <h1>Форма №3</h1>
+    <form action="" method="get">
+        <p>
+            <i>Пожалуйста, заполните форму. Обязательные поля помечены *</i>
+        </p>
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <p>
+                Имя * <input type="text" name="name" required>
+            </p>
+            <p>
+                Телефон <input type="tel" name="phone">
+            </p>
+            <p>
+                Email * <input type="email" name="mail" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <p>
+                Возраст * <input type="number" name="age" id="" required>
+            </p>
+            <p>
+                Пол
+                <select name="gender" id="">
+                    <option disabled selected>Выбор</option>
+                    <option value="female">Женщина</option>
+                    <option value="male">Мужчина</option>
+                </select>
+            </p>
+            <p>
+                Перечислите личные качества <textarea name="" id="" cols="15" rows="2"></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Выберите ваших любимых животных</legend>
+            <label>
+                <input type="checkbox"> Зебра
+            </label>
+            <label>
+                <input type="checkbox"> Кошак
+            </label>
+            <label>
+                <input type="checkbox"> Анаконда
+            </label>
+            <br>
+            <label>
+                <input type="checkbox"> Слон
+            </label>
+            <label>
+                <input type="checkbox"> Антилопа
+            </label>
+            <label>
+                <input type="checkbox"> Голубь
+            </label>
+            <label>
+                <input type="checkbox"> Краб
+            </label>
+        </fieldset>
+        <p>
+            <button type="submit">Отправить информацию</button>
+        </p>
+    </form>
+</body>
+
+</html>
